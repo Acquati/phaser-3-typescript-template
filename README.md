@@ -1,5 +1,5 @@
 <p align="center">
-  <img width=60% src="static/images/phaser3-logo.png">
+  <img width=60% src="public/images/phaser3-logo.png">
 </p>
 
 # Phaser 3 Typescript Template
@@ -18,7 +18,18 @@ Install [Node.js](https://nodejs.org/en) and [Yarn](https://classic.yarnpkg.com/
 git clone https://github.com/acquati/phaser-3-typescript-template.git
 cd phaser-3-typescript-template
 yarn install
+
+# Development
 yarn run dev
+
+# Build
+yarn run build
+
+# Start server
+yarn run start
+
+# Lint
+yarn run lint
 ```
 
 Access [localhost:8080](http://localhost:8080/) in your browser.
@@ -39,11 +50,4 @@ sudo npm install -g n
 sudo n stable
 
 sudo npm install --global yarn
-```
-
-### Update packages
-
-```bash
-yarn add -D parcel@next parcel-reporter-static-files-copy typescript
-yarn add phaser
 ```

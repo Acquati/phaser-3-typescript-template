@@ -1,12 +1,21 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "outDir": "./dist/",
     "target": "ES6",
-    "sourceMap": false,
+    "module": "es6",
+    "strict": true,
     "noImplicitAny": true,
-    "strict": false
+    "noEmit": true,
+    "allowJs": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "typeRoots": ["node_modules/@types", "node_module/phaser/types"],
+    "types": ["phaser"]
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]

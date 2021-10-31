@@ -1,18 +1,18 @@
 import { PhaserLogo } from '../objects/phaserLogo'
 
 export class MainScene extends Phaser.Scene {
-  private phaserLogo: PhaserLogo
+  private phaserLogo: PhaserLogo | undefined
 
   constructor() {
     super({ key: 'MainScene' })
   }
 
-  preload(): void {
+  preload() {
     this.load.image('phaserLogo', 'images/phaser3-logo.png')
     this.load.image('redParticle', 'images/red.png')
   }
 
-  create(): void {
+  create() {
     const particles = this.add.particles('redParticle')
 
     const emitter = particles.createEmitter({
