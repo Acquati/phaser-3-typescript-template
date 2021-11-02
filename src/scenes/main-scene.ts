@@ -1,7 +1,7 @@
 import { PhaserLogo } from '../objects/phaserLogo'
 
 export class MainScene extends Phaser.Scene {
-  private phaserLogo: PhaserLogo | undefined
+  private phaserLogo!: PhaserLogo
 
   constructor() {
     super({ key: 'MainScene' })
