@@ -1,6 +1,6 @@
-import { PhaserLogo } from '../objects/phaserLogo'
+import PhaserLogo from '../objects/phaserLogo'
 
-export class MainScene extends Phaser.Scene {
+export default class MainScene extends Phaser.Scene {
   private phaserLogo!: PhaserLogo
 
   constructor() {

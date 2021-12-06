@@ -1,6 +1,6 @@
-import { MainScene } from './scenes/main-scene'
+import MainScene from './scenes/main-scene'
 
-export const GameConfig: Phaser.Types.Core.GameConfig = {
+const GameConfig: Phaser.Types.Core.GameConfig = {
   title: 'Phaser 3 Typescript Template',
   url: '',
   version: '1.0',
@@ -17,3 +17,5 @@ export const GameConfig: Phaser.Types.Core.GameConfig = {
   },
   scene: [MainScene]
 }
+
+export default GameConfig
