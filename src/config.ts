@@ -1,4 +1,4 @@
-import MainScene from './scenes/main-scene'
+import MainScene from './scenes/MainScene'
 
 const GameConfig: Phaser.Types.Core.GameConfig = {
   title: 'Phaser 3 Typescript Template',
