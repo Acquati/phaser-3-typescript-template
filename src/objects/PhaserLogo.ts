@@ -1,4 +1,4 @@
-import IImageConstructor from '../interfaces/image.interface'
+import IImageConstructor from '../interfaces/IImageConstructor'
 
 export default class PhaserLogo extends Phaser.GameObjects.Image {
   body!: Phaser.Physics.Arcade.Body

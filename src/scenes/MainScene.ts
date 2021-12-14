@@ -1,19 +1,16 @@
-import PhaserLogo from '../objects/phaserLogo'
+import SceneKeys from '../consts/SceneKeys'
+import TextureKeys from '../consts/TextureKeys'
+import PhaserLogo from '../objects/PhaserLogo'
 
 export default class MainScene extends Phaser.Scene {
   private phaserLogo!: PhaserLogo
 
   constructor() {
-    super({ key: 'MainScene' })
-  }
-
-  preload() {
-    this.load.image('phaserLogo', 'images/phaser3-logo.png')
-    this.load.image('redParticle', 'images/red.png')
+    super({ key: SceneKeys.MainScene })
   }
 
   create() {
-    const particles = this.add.particles('redParticle')
+    const particles = this.add.particles(TextureKeys.RedParticle)
 
     const emitter = particles.createEmitter({
       speed: 100,
@@ -25,7 +22,7 @@ export default class MainScene extends Phaser.Scene {
       scene: this,
       x: 400,
       y: 300,
-      texture: 'phaserLogo'
+      texture: TextureKeys.PhaserLogo
     })
 
     emitter.startFollow(this.phaserLogo)
