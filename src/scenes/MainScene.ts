@@ -1,6 +1,7 @@
 import SceneKeys from '../consts/SceneKeys'
 import TextureKeys from '../consts/TextureKeys'
 import PhaserLogo from '../objects/PhaserLogo'
+import GameConfig from '../config'
 
 export default class MainScene extends Phaser.Scene {
   private phaserLogo!: PhaserLogo
@@ -20,8 +21,8 @@ export default class MainScene extends Phaser.Scene {
 
     this.phaserLogo = new PhaserLogo({
       scene: this,
-      x: 400,
-      y: 300,
+      x: Math.floor(Number(GameConfig.width) / 2),
+      y: Math.floor(Number(GameConfig.height) / 2),
       texture: TextureKeys.PhaserLogo
     })
 
