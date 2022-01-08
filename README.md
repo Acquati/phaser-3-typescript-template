@@ -4,7 +4,7 @@
 
 # Phaser 3 Typescript Template
 
-A [Phaser 3 Framework](https://phaser.io/phaser3) template for [Typescript](https://www.typescriptlang.org/) compiled with [Parcel v2](https://v2.parceljs.org/).
+A [Phaser 3](https://phaser.io/phaser3) framework template for [Typescript](https://www.typescriptlang.org/) compiled with [Parcel v2](https://v2.parceljs.org/).
 
 ## Setup
 
